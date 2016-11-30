@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Requests</title>
+</head>
+  <body>
+    <h2>Requests and request types</h2>
+    <p>We use requests to initiate an action.</p>
+    <p>For example, retrieve a new view, performing login, retrieve data, update data, delete data, etc.</p>
+    <p>There are 4 main different types of requests</p>
+    <p>
+      The type of request along with a route destination should
+      indicate what type of action you wish to perform.
+    </p>
+
+    <h4>GET</h4>
+    <p>We use a GET request to retrieve data.</p>
+    <p>For example, if I wanted to view all of the users in my application.</p>
+    <p>Another example, if I wanted to view an individual user in my application.</p>
+
+    <p>Route Example: GET /users or GET /users/:userId</p>
+
+    <h4>POST</h4>
+    <p>We use a POST request to create data or to send new data.</p>
+    <p>
+      For example, if I were trying to create a user in an application,
+      I would send the users data in a POST request to be created.
+    </p>
+    <p>
+      Another example, I want to login to an application, I would send my
+      credentials in a POST request to be verified.
+    </p>
+
+    <p>Route Example: POST /users</p>
+
+    <h4>PUT</h4>
+    <p>I would use a PUT request if I wished to update some existing data.</p>
+    <p>For example, if I wanted to update my password on my account.</p>
+
+    <p>Route Example: PUT /users/:userId</p>
+
+    <h4>DELETE</h4>
+    <p>I would use a DELETE request if I wished to delete some existing data.</p>
+    <p>For example, if I wanted to delete my account.</p>
+
+    <p>Route Example: DELETE /users/:userId</p>
+
+    <a href="/">back</a>
+  </body>
+</html>

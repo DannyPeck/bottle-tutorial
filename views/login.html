@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>login form</title>
+</head>
+<body>
+  <p>This is an example of using a post request to perform login.</p>
+  <p>
+    When the user presses submit, the html will send a post
+    request to the /login route.
+  </p>
+  <p>
+    It is important to note that the reason the html is sending a request
+    is because the view is located on the browser and has to contact your server.
+  </p>
+  <p>
+    The method that handles that request will read the username and password
+    from the input elements and perform the verification.
+  </p>
+
+  <h1>Login form</h1>
+  <form action = "/login" method = "post">
+    <label>UserName</label>
+    <input type = "text" name = "userName">
+    <br />
+
+    <label>Password</label>
+    <input type = "password" name = "password">
+    <br />
+
+    <button>submit</button>
+  </form>
+  <a href="/">back</a>
+</body>
+</html>
